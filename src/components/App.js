@@ -4,16 +4,10 @@ import SearchBar from "./SearchBar";
 import WeatherItem from "./WeatherItem";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
-	},
-	paper: {
-		padding: theme.spacing(2),
-		textAlign: "center",
-		color: theme.palette.text.secondary,
 	},
 }));
 
@@ -46,12 +40,15 @@ class App extends React.Component {
 				<div>
 					<SearchBar runWhenUserSubmits={this.onSearchSubmit} />
 				</div>
-				<div className="ui container" style={{ marginTop: " 10 px" }}>
-					<h3>{this.state.city}</h3>
-					<Grid container className={useStyles.root} spacing={3}>
-						<WeatherItem weather={this.state.weather} />
-					</Grid>
-				</div>
+
+				<h3>{this.state.city}</h3>
+				<Grid
+					container
+					direction="row"
+					justify="center"
+					alignItems="center">
+					<WeatherItem weather={this.state.weather} />
+				</Grid>
 			</div>
 		);
 	}
