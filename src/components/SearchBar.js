@@ -25,7 +25,7 @@ class SearchBar extends React.Component {
 						type="text"
 						value={this.state.term}
 						onChange={this.onInputChange}
-						placeholder="Enter Zipcode..."
+						placeholder="Enter a Zipcode..."
 						id="filled-basic"></input>
 				</form>
 			</div>
