@@ -1,3 +1,19 @@
+# ReactWeatherApp
+
+I used [OpenWeather's API](https://openweathermap.org/) to build a React app that will show the forecast of a location based on a zipcode.
+
+
+  <video controls="true" allowfullscreen="true" poster="./video/weatherapp.png">
+    <source src="./video/weatherapp.mp4" type="video/mp4">
+  </video>
+</figure>
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +82,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# ReactWeatherApp
+
