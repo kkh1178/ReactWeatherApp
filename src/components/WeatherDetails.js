@@ -13,11 +13,11 @@ const useStyles = makeStyles({
 });
 
 const WeatherDetails = ({weather}) => {
-    console.log(weather);
+    // console.log(weather);
     const classes = useStyles();
-    const details = weather.map((w) => {
+    const details = weather.map((w, i) => {
         return(
-        <Typography variant="h5" className={classes.pos} component="h2">
+        <Typography variant="h5" className={classes.pos} component="h2" key={i}>
             
             <Typography className={classes.pos} color="textSecondary">
                 Time: {w.time}

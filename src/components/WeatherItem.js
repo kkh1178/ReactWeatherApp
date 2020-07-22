@@ -49,13 +49,13 @@ const WeatherItem = ({ weather }) => {
 	// console.log(newArr)
 	// using the groupby function out of lodash to group everything by date and then create a new array from that.
 	const grouped = chain(newArr).groupBy("date").map((value, key) => ({ date: key, weather: value})).value()
-	console.log("grouped", grouped)
+	// console.log("grouped", grouped)
 
 	
-	const temperature = grouped.map((temp) => {
+	const temperature = grouped.map((temp, i) => {
 		// creating the card and then passing down each days worth of data to weather details for further display
 		return (
-			<Card className={classes.root}>
+			<Card className={classes.root} key={i}>
 				<CardContent>
 					<Typography className={classes.title}
 						color="textSecondary"
