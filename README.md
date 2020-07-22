@@ -2,9 +2,10 @@
 
 I used [OpenWeather's API](https://openweathermap.org/) to build a React app that will show the forecast of a location based on a zipcode.
 
+Here is a video that will show how the app works:
 
-  <video controls="true" allowfullscreen="true" poster="./video/weatherapp.png">
-    <source src="./video/weatherapp.mp4" type="video/mp4">
+  <video controls="true" allowfullscreen="true" poster="/video/weatherapp.png">
+    <source src="/video/wweatherappmp4.mp4" type="video/mp4">
   </video>
 </figure>
 
